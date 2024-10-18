@@ -18,7 +18,7 @@ app.use((req, res, next) =>
     {
         // Send the response using the original `res.json()` and append the newline after it is done
         res.setHeader('Content-Type', 'application/json');
-        res.write(JSON.stringify(body) + '\n\n');
+        res.write(JSON.stringify(body) + '\n\n'); // added double line to view confort for me
         res.end();
     };
 
